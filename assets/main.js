@@ -15,3 +15,15 @@ lista_cognomi.push(cognome_utente);
 console.log(lista_cognomi);
 
 // Metto in ordine alfabetico i cognomi nell'array (lista_cognomi)
+lista_cognomi.sort();
+
+for (var i = 0; i < lista_cognomi.length; i++) {
+    console.log(lista_cognomi[i]);
+}
+
+// Devo comunicare all'utente la posizione in cui si trova il suo cognome
+var posizione_lista = lista_cognomi.indexOf(cognome_utente);
+
+// verifico se cognome in posizione
+// console.log("Cognome in posizione numero" +posizione_lista);
+document.writeln("Il tuo cognome si trova in posizione n°" +posizione_lista);
